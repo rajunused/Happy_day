@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy 1 Year Anniversary Naina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+    <!-- Floating Hearts -->
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💗</span>
+</div>
+
+<div id="wrapper">
+
+    <!-- LEFT -->
+    <div class="left">
+        <h1 class="happy">Happy</h1>
+
+        <h1 class="year-love">1 YEAR</h1>
+
+        <h1 class="anniversary">Anniversary</h1>
+
+        <div class="name-box">Naina 💖</div>
+
+        <button id="btn__letter">
+            Click Here Anveshious
+            <i class="fa-regular fa-envelope"></i>
+        </button>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <div class="image">
+            <img src="images/naina_majnu.jpeg" alt="Naina">
+        </div>
+        <div class="dear">
+            <i class="fa-solid fa-heart"></i>
+            Dear Naina
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </div>
+
+</div>
+
+<!-- TIMELINE -->
+<div class="timeline">
+    <div class="line"></div>
+    <div class="event">
+        <div class="dot"></div>
+        <div class="text">
+            <h3>19th December 2024</h3>
+            <p>Our journey began 💖</p>
+        </div>
+    </div>
+</div>
+
+<!-- LETTER POPUP -->
+<div class="boxMail">
+    <i class="fa-solid fa-xmark"></i>
+    <div class="letter">
+        <h2>Forever Us 💕</h2>
+        <p>
+            Tumhe pata hai jab pehle tum aayi thi, what attracted me the most about you?  
+            Baaki saari ladkiyon se woh matured wala self tumpe zyada tha.  
+            Tumhe pata hai kaise har situation handle karni hai, kaise sabke saath behave karna hai.  
+            Agar kisi ke aane jaane se tumhe problem nahi hai aur mujhe bhi nahi hai,  
+            toh chhip chhip ke kya karna?  
+            Kuch galat toh humlog kar hi nahi rahe na.  
+            Bas openly jeena seekho, jaise pehle thi —  
+            ekdam shuru shuru ke din wali woh free-minded Anvesha.  
+            Waise hi bani raho.  
+            Zyada sochne lagogi toh khud ko hi kho baithogi.  
+            Aur aajkal tum chinta bohot karti ho,  
+            hasti thodi kam ho gayi ho.  
+            Muskurao… aur thoda sa pyari lagogi.  
+            Darna nahi hai mujhe tumse.  
+            Aur haan — compliment ya kisi tareeke se pakad lo —  
+            baalon ko khula rakha karo, achhi lagti ho ♥️  
+            Waise… itna sab saamne, ya call pe, ya VN mein bolne jaata  
+            toh 1G network pe lag khata,  
+            isiliye text pe bol diya.
+        </p>
+    </div>
+</div>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="khubsurat.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const btn = document.getElementById("btn__letter");
+    const box = document.querySelector(".boxMail");
+    const close = document.querySelector(".fa-xmark");
+    const music = document.getElementById("bgMusic");
+
+    btn.onclick = () => {
+        box.classList.add("active");
+        music.volume = 0.4;
+        music.play();
+    };
+
+    close.onclick = () => {
+        box.classList.remove("active");
+    };
+</script>
+
+</body>
+</html>
